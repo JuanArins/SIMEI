@@ -50,7 +50,7 @@ A primeira validação física do **SIMEI v0.1.0** foi concluída com sucesso.
 
 A demonstração apresenta a execução da sequência operacional, a resposta dos dispositivos da bancada e a atuação da lógica de intertravamentos.
 
-🔗 **Assistir à primeira validação física:**
+🔗 **Primeira validação física:**
 
 https://www.linkedin.com/posts/juan-arins-232a10224_engenhariaelaeztrica-automaaexaetoindustrial-ugcPost-7486192123768320001-6Iyo/
 
@@ -70,8 +70,8 @@ https://www.linkedin.com/posts/juan-arins-232a10224_engenhariaelaeztrica-automaa
 - Feedback visual e sonoro;
 - Montagem do primeiro protótipo físico;
 - Primeira validação física;
-- Documentação inicial;
-- Repositório do projeto.
+- Documentação técnica;
+- Organização do repositório.
 
 ## 🔄 Próximas etapas
 
@@ -82,7 +82,7 @@ https://www.linkedin.com/posts/juan-arins-232a10224_engenhariaelaeztrica-automaa
 - Simulação de tensão e corrente;
 - Validação das condições de paralelismo entre transformadores;
 - Registro das operações executadas;
-- Evolução da plataforma para uma arquitetura baseada em ESP32.
+- Evolução da plataforma para ESP32.
 
 ---
 
@@ -101,14 +101,12 @@ SIMEI/
 │
 ├── docs/
 │   ├── Diário de Bordo
-│   └── Especificação Técnica do Protótipo
-│
-├── firmware/
-│   └── README.md
+│   ├── Especificação Técnica do Protótipo
+│   └── Levantamento de Materiais
 │
 ├── media/
 │   ├── logo.png
-│   └── demonstração do protótipo
+│   └── SIMEI.mp4
 │
 └── README.md
 ```
@@ -135,7 +133,7 @@ Graduando em Engenharia Elétrica.
 
 Projeto pessoal voltado ao desenvolvimento de soluções didáticas para treinamento operacional em instalações elétricas industriais.
 
-🔗 **LinkedIn:**
+🔗 **LinkedIn**
 
 https://www.linkedin.com/in/juan-arins-232a10224/
 
@@ -144,7 +142,7 @@ https://www.linkedin.com/in/juan-arins-232a10224/
 # 📌 Status do Desenvolvimento
 
 | Etapa | Status |
-|---|:---:|
+|:-------------------------------|:------:|
 | Planejamento | ✅ |
 | Arquitetura inicial | ✅ |
 | Firmware inicial | ✅ |
@@ -164,4 +162,4 @@ https://www.linkedin.com/in/juan-arins-232a10224/
 
 **Versão atual:** `v0.1.0`
 
-A primeira validação física foi concluída. O projeto segue para a etapa de desenvolvimento da Interface Homem-Máquina e expansão dos cenários operacionais.
+A primeira validação física foi concluída. O projeto segue para a etapa de desenvolvimento da Interface Homem-Máquina (IHM) e expansão dos cenários operacionais.
