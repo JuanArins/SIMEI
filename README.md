@@ -10,165 +10,160 @@
 
 <p align="center">
 
-Versão **0.1.0** • 🚧 Em desenvolvimento
+**Versão 0.1.0** • 🚧 Em desenvolvimento
 
 </p>
 
 ---
 
-# 📖 Sobre o Projeto
+# 📖 Visão Geral
 
-O **SIMEI (Sistema Inteligente para Manobras Elétricas Industriais)** é uma plataforma didática destinada ao treinamento de operadores em manobras elétricas industriais.
+O **SIMEI (Sistema Inteligente para Manobras Elétricas Industriais)** é uma plataforma didática destinada ao treinamento de procedimentos operacionais em instalações elétricas industriais.
 
-O projeto integra uma bancada física a uma **Interface Homem-Máquina Supervisória (IHM)**, permitindo a simulação segura de procedimentos normalmente executados em subestações industriais, eliminando riscos à instalação real durante o processo de treinamento.
-
-A proposta nasceu durante o estágio na **Usiminas**, após treinamentos relacionados ao funcionamento do anel de **88 kV** e às lógicas de manobra utilizadas na planta.
+O projeto busca proporcionar um ambiente seguro para aprendizagem, permitindo que operadores executem sequências de manobra, compreendam a lógica dos intertravamentos elétricos e recebam feedback imediato sobre suas ações, sem qualquer interferência em instalações reais.
 
 ---
 
-# 🎯 Objetivo
+# ⚠ O Problema
 
-Desenvolver uma plataforma capaz de simular manobras elétricas em ambiente seguro, proporcionando treinamento prático, padronizado e confiável para operadores de instalações elétricas industriais.
+O treinamento de manobras em instalações elétricas normalmente apresenta limitações relacionadas à disponibilidade da instalação, aos requisitos de segurança e ao acompanhamento de profissionais experientes.
 
-Além da aplicação acadêmica, o projeto busca demonstrar a viabilidade da utilização de plataformas didáticas para capacitação técnica em ambientes industriais.
+Esses fatores reduzem as oportunidades de treinamento prático e dificultam o desenvolvimento da experiência operacional necessária para a execução segura dos procedimentos.
+
+---
+
+# 💡 A Solução
+
+O SIMEI reproduz cenários operacionais utilizando uma arquitetura composta por uma bancada didática integrada a uma Interface Homem-Máquina Supervisória (IHM).
+
+Durante a simulação, o sistema acompanha cada operação executada, valida automaticamente a sequência das manobras, identifica inconsistências operacionais e fornece feedback em tempo real ao operador.
+
+---
+
+# 🎯 Objetivos
+
+- Simular procedimentos operacionais em instalações elétricas industriais;
+- Auxiliar na capacitação técnica de operadores;
+- Validar sequências de manobra;
+- Demonstrar a lógica dos intertravamentos elétricos;
+- Proporcionar treinamento prático em ambiente seguro;
+- Permitir a expansão para novos cenários operacionais.
+
+---
+
+# ⚙ Funcionalidades
+
+- Simulação de procedimentos operacionais;
+- Validação automática da sequência de manobras;
+- Sistema de intertravamentos lógicos;
+- Identificação de erros operacionais;
+- Alarmes sonoros;
+- Feedback operacional em tempo real;
+- Interface Homem-Máquina Supervisória (IHM);
+- Plataforma modular para expansão de novos cenários.
+
+---
+
+# 🏗 Arquitetura
+
+O SIMEI foi concebido utilizando uma arquitetura modular composta por três camadas.
+
+## Camada Física
+
+Responsável pela representação dos equipamentos presentes na instalação elétrica através de dispositivos eletrônicos de sinalização e acionamento.
+
+## Camada de Controle
+
+Responsável pelo processamento da lógica operacional, validação das sequências de manobra, gerenciamento dos intertravamentos e tratamento das condições de erro.
+
+## Camada de Supervisão
+
+Responsável pela interação entre o operador e o sistema, fornecendo comandos, informações operacionais e feedback em tempo real através de uma Interface Homem-Máquina (IHM).
+
+Essa arquitetura permite a evolução da plataforma sem alterar seu conceito de funcionamento.
+
+---
+
+# 🔧 Implementação Atual
+
+A versão atual corresponde ao primeiro protótipo funcional da plataforma.
+
+### Recursos implementados
+
+- Controle lógico das manobras;
+- Comunicação Serial;
+- Interface textual de operação;
+- Sistema de feedback operacional;
+- Sistema de alarmes;
+- Primeiro cenário de treinamento.
+
+### Cenário implementado
+
+Simulação da retirada de operação de um transformador de potência em uma subestação elétrica, utilizando validação automática das etapas da manobra e intertravamentos lógicos.
 
 ---
 
 # 🚀 Roadmap
 
-## SIMEI v1.0
+## Versão 1.0
 
-Primeira versão do projeto destinada à Iniciação Científica e apresentação interna na Usiminas.
+Primeira implementação funcional da plataforma.
 
-### Hardware
-
-- Arduino Uno
-- LEDs indicadores
-- Buzzer
-- Protoboard
-
-### Software
-
-- Comunicação Serial
-- Interface Homem-Máquina Supervisória (IHM)
-- Firmware em C++
-- Cenário operacional TF3-05
-
-### Objetivos
-
-- Validação da ideia
-- Demonstração funcional
-- Primeiro protótipo operacional
+- Arquitetura inicial;
+- Desenvolvimento do firmware;
+- Interface Supervisória;
+- Primeiro cenário operacional;
+- Integração entre hardware e software.
 
 ---
 
-## SIMEI v2.0
+## Versão 2.0
 
-Versão destinada ao Trabalho de Conclusão de Curso (TCC).
+Expansão da plataforma.
 
-### Hardware
-
-- ESP32
-- Módulos de Relé
-- Painel didático
-- Expansão das entradas e saídas
-
-### Software
-
-- Plataforma expansível
-- Cadastro de novos cenários
-- Interface Supervisória completa
-- Comunicação industrial
-- Sistema de pontuação
-- Registro de treinamentos
-
-### Objetivos
-
-- Plataforma completa de treinamento
-- Sistema expansível
-- Aplicação industrial
-
----
-
-# ⚙ Funcionalidades previstas
-
-- Simulação de manobras elétricas
-- Validação automática da sequência operacional
-- Intertravamentos lógicos
-- Alarmes sonoros
-- Interface supervisória
-- Feedback em tempo real
-- Múltiplos cenários operacionais
-- Plataforma expansível para novos treinamentos
+- Plataforma modular;
+- Múltiplos cenários de treinamento;
+- Biblioteca de procedimentos operacionais;
+- Registro das operações executadas;
+- Histórico de treinamentos;
+- Evolução da Interface Supervisória.
 
 ---
 
 # 🛠 Tecnologias
 
-### Hardware
+## Conceitos Aplicados
 
-- Arduino Uno
-- ESP32
-- LEDs
-- Resistores
-- Buzzer
-- Relés
-- Protoboard
+- Sistemas Embarcados;
+- Automação Industrial;
+- Intertravamentos Elétricos;
+- Procedimentos Operacionais;
+- Interface Homem-Máquina (IHM);
+- Comunicação Serial.
 
-### Software
+## Ferramentas de Desenvolvimento
 
-- C++
-- Arduino IDE
-- Comunicação Serial
-- Interface Supervisória (SCADA)
-
-### Ferramentas
-
-- Git
-- GitHub
-- Tinkercad
+- Linguagem C/C++;
+- Git;
+- GitHub;
+- Arduino IDE;
+- Tinkercad.
 
 ---
 
-# 📂 Estrutura do Projeto
-
-```
-SIMEI
-
-├── README.md
-├── CHANGELOG.md
-├── Diário de Bordo
-│
-├── 00 - Gestão do Projeto
-├── 01 - Hardware
-├── 02 - Firmware Arduino
-├── 03 - Interface Supervisória
-├── 04 - Diagramas
-├── 05 - Documentação
-├── 06 - Testes
-├── 07 - Iniciação Científica
-├── 08 - TCC
-└── 09 - Apresentação Usiminas
-```
-
----
-
-# 📈 Situação Atual
+# 🚧 Status do Desenvolvimento
 
 | Etapa | Status |
-|-------|:------:|
-| Definição do Projeto | ✅ |
-| Arquitetura Inicial | ✅ |
-| Diário de Bordo | ✅ |
-| Documentação Inicial | ✅ |
+|---------------------------|:------:|
+| Planejamento | ✅ |
+| Arquitetura | ✅ |
+| Documentação | ✅ |
 | Firmware | 🚧 |
-| Protótipo Físico | ⏳ |
+| Protótipo físico | ⏳ |
 | Interface Supervisória | ⏳ |
 | Testes | ⏳ |
-| Apresentação IC | ⏳ |
-| Apresentação Usiminas | ⏳ |
 
-Legenda
+**Legenda**
 
 - ✅ Concluído
 - 🚧 Em desenvolvimento
@@ -180,41 +175,22 @@ Legenda
 
 | Versão | Descrição |
 |---------|-----------|
-| v0.1.0 | Planejamento do projeto |
-| v0.2.0 | Estrutura documental |
-| v0.3.0 | Protótipo Arduino |
-| v0.4.0 | Integração IHM |
-| v1.0.0 | Apresentação na Iniciação Científica e Usiminas |
-| v2.0.0 | Plataforma completa (TCC) |
+| 0.1.0 | Estrutura inicial do projeto |
+| 0.2.0 | Desenvolvimento do firmware |
+| 0.3.0 | Primeiro protótipo funcional |
+| 1.0.0 | Primeira versão operacional |
+| 2.0.0 | Plataforma modular |
 
 ---
 
-# 👨‍💻 Autor
+# 👨‍💻 Desenvolvedor
 
 **Juan Augusto Budal Arins Teixeira**
 
-Graduando em Engenharia Elétrica
-
-Projeto desenvolvido durante estágio na **Usiminas**, com foco em treinamento operacional de manobras elétricas industriais.
+Graduando em Engenharia Elétrica.
 
 ---
 
 # 📄 Licença
 
-Este projeto encontra-se em desenvolvimento e possui finalidade acadêmica e de pesquisa.
-
-Todos os direitos reservados ao autor.
-
----
-
-<p align="center">
-
-<b>SIMEI</b>
-
-Sistema Inteligente para Manobras Elétricas Industriais
-
-Projeto de Pesquisa • Engenharia Elétrica
-
-2026
-
-</p>
+Projeto em desenvolvimento para fins acadêmicos, pesquisa e demonstração tecnológica.
